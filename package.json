@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/rodrigodiasf1984/-ReactJS-Hooks-Recoil-TDD-Clean-Architecture-SOLID-V2#readme",
   "devDependencies": {
-    "git-commit-msg-linter": "^3.2.8"
+    "@types/node": "^16.11.10",
+    "git-commit-msg-linter": "^3.2.8",
+    "typescript": "^4.5.2"
   }
 }
