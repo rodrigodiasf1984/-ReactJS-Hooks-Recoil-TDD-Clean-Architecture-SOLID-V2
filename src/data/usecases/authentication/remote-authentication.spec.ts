@@ -81,6 +81,6 @@ describe('RemoteAuthentication', () => {
       body: htttpResult
     }
     const account = await sut.auth(mockAuthentication())
-    await expect(account).toEqual(htttpResult)
+    expect(account).toEqual(htttpResult)
   })
 })
