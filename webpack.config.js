@@ -1,19 +1,19 @@
-const path = requirte('path');
+const path = require('path');
 const {DefinePlugin} = require('webpack');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/main.index.tsx',
+  entry: './src/main/index.tsx',
   output: {
-    path: path.join(__dirname, 'public/dist'),
+    path: path.join(__dirname, 'public/js'),
     publicPath: '/public/js',
     filename: 'bundle.js',
   }, 
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.scss'],
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      '@': path.join(__dirname, 'src'),
     }
   }, 
   module: {
